@@ -34,6 +34,10 @@ def obtener_datos_cacao():
     else:
         return {'error': f'La solicitud no fue exitosa. Código de estado: {response.status_code}'}
 
+@app.route('/')
+def index():
+    return 'API de datos de cacao, por favor agregue "/datos-cacao" al url para que pueda observar los resultados'
+    
 @app.route('/datos-cacao', methods=['GET'])
 def obtener_datos_cacao_api():
     datos_cacao = obtener_datos_cacao()
