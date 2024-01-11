@@ -3,3 +3,4 @@ flask==2.1.2
 beautifulsoup4
 waitress
 gunicorn==20.1.0
+Werkzeug==2.2.2
